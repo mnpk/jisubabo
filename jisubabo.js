@@ -10,6 +10,10 @@ app.get('/', function (req, res) {
   });
 });
 
+app.get('/babo', function(req, res) {
+  res.send('지수 바보');
+});
+
 var server = app.listen(3000, function () {
   var host = server.address().address;
   var port = server.address().port;
