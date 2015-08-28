@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
   });
 });
 
-app.get('/babo', function(req, res) {
+app.get('/baboya', function(req, res) {
   res.send('지수 바보');
 });
 
