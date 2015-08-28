@@ -14,7 +14,10 @@ app.get('/baboya', function(req, res) {
   res.send('지수 바보');
 });
 
-var server = app.listen(3000, function () {
+
+var port = process.env.PORT || 8080;
+
+var server = app.listen(port, function () {
   var host = server.address().address;
   var port = server.address().port;
 
